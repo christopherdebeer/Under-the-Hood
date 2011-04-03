@@ -1,0 +1,92 @@
+
+
+@green: #fffff;
+@greenUnderscore: url("assets/images/underscore_device_green.gif") bottom right tranparent;
+
+
+
+   body,html {
+        font-size: 14px;
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #fff;
+    }
+    #wrapper {
+        max-width: 500px;
+        margin:0 auto;
+        padding: 0px 10px 10px 10px; 
+    }
+    h1 {
+        text-indent: -99999px;
+        height: 170px; 
+        display: block;
+        min-width: 310px;
+        margin: 0 auto;
+        padding: 0;
+        background: url("../images/under_the_hood_logo.jpg") top center no-repeat transparent;
+    }
+    
+    h2 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        text-transform: uppercase;
+        display: block;
+        border-bottom: 1px solid #333;
+        background: url("underscore_device_blue.jpg") bottom right transparent;
+        margin: 10px 0 15px;
+        padding: 10px 0;
+    }
+    p {
+        margin: 10px 0 15px;
+    }
+    #main-nav { overflow: auto; margin:0; padding:0; }
+    #main-nav li {
+        text-align: right;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        text-transform: uppercase;
+        height: 50px;
+        display: block;
+        border-bottom: 1px solid #333;
+        padding: 10px 0;
+        background: url("../images/coloured_line_device.jpg") bottom right no-repeat transparent;
+    }
+    #main-nav li:first-child { border-top: 3px solid #ccc; }
+    #main-nav li:last-child { border-bottom: 3px solid #ccc; }
+    #main-nav li a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 15px 10px 15px 30px;
+        background: url("../images/white_arrow_facing_right.gif") left center no-repeat transparent;
+    }
+    #main-nav li a:hover { color: #02DFD6; }
+    #main-nav li a.current { color: #02DFD6; }
+    #footer {
+        text-indent: -99999px;
+        background: url("../images/website_by_line.gif") right center no-repeat transparent;
+        font-size: 10px;
+        padding: 20px 0;
+    }
+    
+    
+    
+    /* Per section styling based on class given to the body tag */
+      
+    body.home h1 { background: url("assets/images/under_the_hood_logo_green.jpg"); }
+    body.home #content a { color: #Green; }
+    body.home .underscore { background: url("assets/images/underscore_device_green.gif"); }
+    body.event .bulletlist li {background: url("assets/images/bullet_point_green.gif"); }
+    body.event .download li {background: url("assets/images/download_icon_green.gif"); }
+      
+    body.event h1 { background: url("assets/images/under_the_hood_logo_blue.jpg"); }
+    body.event #content a { color: #Blue; }
+    body.event .underscore { background: url("assets/images/underscore_device_blue.gif"); }
+    body.event .bulletlist li {background: url("assets/images/bullet_point_blue.gif"); }
+    
+    
+    
