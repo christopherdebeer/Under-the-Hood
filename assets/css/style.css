@@ -115,7 +115,7 @@
     
 
     .current {color: #03DED6; }
-    .loading img { width:50px; text-align:center; margin:20px auto; float:none;}
+    body #wrapper #content .loading img { width:31px; text-align:center; margin:20px auto; float:none; display:block; border: 0 none;}
     
     
     
