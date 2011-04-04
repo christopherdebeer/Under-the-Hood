@@ -14,6 +14,9 @@
 
 include("settings.php");
 
+
+    $order = array();
+
     $path = 'app/pages/';
     $dh = opendir($path);
     $pages = array();
@@ -24,7 +27,21 @@ include("settings.php");
 	    }
 	}
     }
+    
+    // for each item in $prefered_order_of_pages if it is in $pages then append to $order
+    
+    foreach ($prefered_order_of_pages as $item) {
+	if ( in_array($item, $pages)) { $order[] = $item; }
+    }
+     
+    // for each item in $pages that isnt in $order append to order
+     
+    foreach ($pages as $item) {
+	if ( !in_array($item, $order)) { $order[] = $item; }
+    }
 
+    
+    $firstpage = $order[0];
     
     // if "DELETE_ME_TO_RESET" doesnt exist:
     
@@ -34,10 +51,10 @@ include("settings.php");
 	
 	
 	// if /app/header.html exists
-	if (file_exists("app/header.html")) {
+	if (file_exists("app/head.html")) {
 	    
 	    // get header.html + $framework head
-	    $header = file_get_contents("app/header.html");
+	    $header = file_get_contents("app/head.html");
 	    $header .= file_get_contents("core/head.php");
 	
 	} else {
@@ -60,18 +77,14 @@ include("settings.php");
     
 	// create a #main-nav template
 	
-	$path = 'app/pages/';
-	$dh = opendir($path);
 	$home_list = "<ol id='main-nav'>"."\n";
 	$sections = array();
-	if($dh){
-	    while(($page = readdir($dh)) !== false) {
-		if ($page != "." && $page != ".." && $page != "README") {  
-		    $title = str_replace(".html","",$page);
-		    $sections[] = $title;
-		    $title = str_replace("_"," ",$title);
-		    $home_list .= "<li><a href='$page'>$title</a></li>"."\n";
-		}
+	foreach ($order as $page) {
+	    if ($page != "." && $page != ".." && $page != "README") {  
+		$title = str_replace(".html","",$page);
+		$sections[] = $title;
+		$title = str_replace("_"," ",$title);
+		$home_list .= "<li><a href='$page'>$title</a></li>"."\n";
 	    }
 	}
 	$home_list .= "</ol>"."\n";
@@ -87,9 +100,9 @@ include("settings.php");
 	    $html = "<!DOCTYPE html>\n<html>\n<head>"."\n";
 	    $html .= $header;
 	    $html .= "</head>\n<body>\n<div id='wrapper'>"."\n";
-	    $html .= "<h1>$app_title</h1><div id='content'>" . file_get_contents("app/pages/$item.html") . "</div>"."\n";
+	    $html .= "<h1><a href='$firstpage'>$app_title</a></h1><div id='content'>" . file_get_contents("app/pages/$item.html") . "</div>"."\n";
 	    $html .= $home_list;
-	    $html .= $footer;
+	    $html .= "<div id='footer'>" . $footer . "</div>";
 	    $html .= "</div>\n</body>"."\n";
 	    
 	    $homefile =fopen("$item.html", 'w');
@@ -106,7 +119,7 @@ include("settings.php");
 	    
     }
     
-    include($pages[0]);
+    include($firstpage);
     
     
    

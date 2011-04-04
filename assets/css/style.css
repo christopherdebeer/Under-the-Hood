@@ -1,0 +1,192 @@
+
+   body,html {
+        font-size: 14px;
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #fff;
+    }
+    #wrapper {
+        max-width: 500px;
+        margin:0 auto;
+        padding: 0px 10px 10px 10px; 
+    }
+    h1 {
+        text-indent: -99999px;
+        height: 170px; 
+        display: block;
+        min-width: 310px;
+        margin: 0 auto;
+        padding: 0;
+        background: url("../images/under_the_hood_logo_green.jpg") top center no-repeat transparent;
+    }
+    
+    h2 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        text-transform: uppercase;
+        display: block;
+        border-bottom: 1px solid #333;
+        background: url("assets/images/underscore_device_green.jpg") bottom right transparent;
+        margin: 10px 0 15px;
+        padding: 10px 0;
+    }
+    
+    h3 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        text-transform: uppercase;
+        display: block;
+        border-top: 1px solid #333;
+        background: url("assets/images/underscore_device_green.jpg") top right transparent;
+        margin: 30px 0 15px;
+        padding: 10px 0;
+    }
+    h4 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        text-transform: uppercase;
+        display: block;
+        margin: 20px 0 15px;
+
+    }
+    p {
+        margin: 10px 0 15px;
+    }
+    #main-nav { overflow: auto; margin:0; padding:0; }
+    #main-nav li {
+        text-align: right;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        text-transform: uppercase;
+        height: 50px;
+        display: block;
+        border-bottom: 1px solid #333;
+        padding: 10px 0;
+    }
+    #main-nav li:first-child { border-top: 3px solid #ccc; }
+    #main-nav li:last-child { border-bottom: 3px solid #ccc; }
+    #main-nav li a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 15px 10px 15px 30px;
+        background: url("../images/arrow_facing_right_white.gif") left center no-repeat transparent;
+    }
+    #main-nav li a:hover { color: #02DFD6; }
+    #main-nav li a.current { color: #02DFD6; }
+    
+    #content {padding-bottom:20px;}
+    #content a { text-decoration:none; }
+    
+    #content ul, #content ol {
+        margin: 10px 0;
+        padding: 0;
+    }
+    #content ul li {
+        background: url("../images/bullet_point_green.gif") left center no-repeat transparent;
+        padding-left: 15px;
+        list-style: none;
+    }
+    
+    body #content .download {
+        float:none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        text-transform: uppercase;
+        background: url("../images/download_icon_green.gif") left center no-repeat transparent;
+        padding: 10px 0;
+        padding-left: 22px;
+        margin-right: 20px;
+        border: 0 none;
+    }
+    
+    #content .separator {
+        height:4px;
+        border-bottom: 1px solid #333;
+        background: url("../images/underscore_device_green.gif") bottom right no-repeat transparent;
+    }
+    
+
+    .current {color: #03DED6; }
+    .loading img { width:50px; text-align:center; margin:20px auto; float:none;}
+    
+    
+    
+    /* Per section styling based on class given to the body tag */
+    
+    
+      
+    body.Home h1 { background: url("../images/under_the_hood_logo_green.jpg") top center no-repeat transparent; }
+    body.Home #content a { color: #03DED6; }
+    body.Home #main-nav li a {color: #fff;}
+    body.Home #main-nav li a:hover { color: #03DED6; }
+    body.Home h2 { background: url("../images/underscore_device_green.gif") bottom right no-repeat transparent; }
+    body.Home h3 { background: url("../images/underscore_device_green.gif") top right no-repeat transparent; }
+    body.Home .bulletlist li {background: url("../images/bullet_point_green.gif") left center no-repeat transparent; }
+    body.Home #content .download {background-image: url("../images/download_icon_green.gif"); }
+    body.Home #main-nav li .current {color: #03DED6; background-image: url("../images/arrow_facing_right_green.gif"); }
+    body.Home #content img { margin:20px 0; }
+    body.Home #content ul li { background-image: url("../images/bullet_point_green.gif"); }
+    body.Home #content .separator { background-image: url("../images/underscore_device_green.gif"); }
+      
+    body.The_Event h1 { background: url("../images/under_the_hood_logo_blue.jpg") top center no-repeat transparent; }
+    body.The_Event #content a { color: #0d97ef; }
+    body.The_Event #main-nav li a {color: #fff;}
+    body.The_Event #main-nav li a:hover { color: #0d97ef; }
+    body.The_Event h2 { background: url("../images/underscore_device_blue.gif") bottom right no-repeat transparent; }
+    body.The_Event h3 { background: url("../images/underscore_device_blue.gif") top right no-repeat transparent; }
+    body.The_Event .bulletlist li {background: url("../images/bullet_point_blue.gif") left center no-repeat transparent; }
+    body.The_Event #content .download {background-image: url("../images/download_icon_blue.gif"); }
+    body.The_Event #main-nav li .current {color: #0d97ef; background-image: url("../images/arrow_facing_right_blue.gif");}
+    body.The_Event #content img { margin:20px 0; }
+    body.The_Event #content ul li { background-image: url("../images/bullet_point_blue.gif"); }
+    body.The_Event #content .separator { background-image: url("../images/underscore_device_blue.gif"); }
+    
+    body.The_Brief h1 { background: url("../images/under_the_hood_logo_brown.jpg") top center no-repeat transparent; }
+    body.The_Brief #content a { color: #a5965d; }
+    body.The_Brief #main-nav li a {color: #fff;}
+    body.The_Brief #main-nav li a:hover { color: #a5965d; }
+    body.The_Brief h2 { background: url("../images/underscore_device_brown.gif") bottom right no-repeat transparent; }
+    body.The_Brief h3 { background: url("../images/underscore_device_brown.gif") top right no-repeat transparent; }
+    body.The_Brief .bulletlist li {background: url("../images/bullet_point_brown.gif") left center no-repeat transparent; }
+    body.The_Brief #content .download {background-image: url("../images/download_icon_brown.gif"); }
+    body.The_Brief #main-nav li .current { color:#a5965d; background-image: url("../images/arrow_facing_right_brown.gif"); }
+    body.The_Brief #content img { margin:20px 0; }
+    body.The_Brief #content ul li { background-image: url("../images/bullet_point_brown.gif"); }
+    body.The_Brief #content .separator { background-image: url("../images/underscore_device_brown.gif"); }
+    
+    body.Participants h1 { background: url("../images/under_the_hood_logo_purple.jpg") top center no-repeat transparent; }
+    body.Participants #content a { color: #6b3aca; }
+    body.Participants #main-nav li a {color: #fff;}
+    body.Participants #main-nav li a:hover { color: #6b3aca; }
+    body.Participants h2 { background: url("../images/underscore_device_purple.gif") bottom right no-repeat transparent; }
+    body.Participants h3 { background: url("../images/underscore_device_purple.gif") top right no-repeat transparent; }
+    body.Participants .bulletlist li {background: url("../images/bullet_point_purple.gif") left center no-repeat transparent; }
+    body.Participants #content .download {background-image: url("../images/download_icon_purple.gif"); }
+    body.Participants #main-nav li .current { color:#6b3aca; background-image: url("../images/arrow_facing_right_purple.gif"); }
+    body.Participants #content img { margin:20px 0; float:left; margin-right:15px; margin-bottom:15px; border: 1px solid #333;}
+    body.Participants #content ul li { background-image: url("../images/bullet_point_purple.gif"); }
+    body.Participants #content .separator { background-image: url("../images/underscore_device_purple.gif"); }
+    
+    body.Participants #content p {clear:left;}
+    body.Participants #content h2 {margin-bottom: 0;}
+    
+    
+    /* Skinnable / Addons not crucial to the framework */
+    
+    #footer {
+        text-indent: -99999px;
+        background: url("../images/website_by_line.gif") right center no-repeat transparent;
+        font-size: 10px;
+        padding: 20px 0;
+    }
+    
+    
+    
