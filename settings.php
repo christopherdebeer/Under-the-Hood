@@ -11,6 +11,11 @@ $app_title = "Under the Hood";
 // Any outstanding pages will be appended in alphabetical order.
 // Any listed pages that dont exist, will be ignored.
 
-$prefered_order_of_pages = array("Home.html","The_Event.html","The_Brief.html");
+$prefered_order_of_pages = array("Home.html","The_Event.html","The_Brief.html","Gallery.html");
+
+
+$autogenerate_gallery = true;
+
+$flickr_nsid = '88399767@N00';
 
 ?>

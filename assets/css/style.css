@@ -8,7 +8,7 @@
         color: #fff;
     }
     #wrapper {
-        max-width: 500px;
+        max-width: 450px;
         margin:0 auto;
         padding: 0px 10px 10px 10px; 
     }
@@ -57,6 +57,7 @@
     p {
         margin: 10px 0 15px;
     }
+    img {border:0 none;}
     #main-nav { overflow: auto; margin:0; padding:0; }
     #main-nav li {
         text-align: right;
@@ -174,9 +175,53 @@
     body.Participants #content img { margin:20px 0; float:left; margin-right:15px; margin-bottom:15px; border: 1px solid #333;}
     body.Participants #content ul li { background-image: url("../images/bullet_point_purple.gif"); }
     body.Participants #content .separator { background-image: url("../images/underscore_device_purple.gif"); }
-    
-    body.Participants #content p {clear:left;}
+     
+    body.Participants #content p {clear:left;}   
     body.Participants #content h2 {margin-bottom: 0;}
+    
+    body.Venue h1 { background: url("../images/under_the_hood_logo_red.jpg") top center no-repeat transparent; }
+    body.Venue #content a { color: #bf0000; }
+    body.Venue #main-nav li a {color: #fff;}
+    body.Venue #main-nav li a:hover { color: #bf0000; }
+    body.Venue h2 { background: url("../images/underscore_device_red.gif") bottom right no-repeat transparent; }
+    body.Venue h3 { background: url("../images/underscore_device_red.gif") top right no-repeat transparent; }
+    body.Venue .bulletlist li {background: url("../images/bullet_point_red.gif") left center no-repeat transparent; }
+    body.Venue #content .download {background-image: url("../images/download_icon_red.gif"); }
+    body.Venue #main-nav li .current { color:#bf0000; background-image: url("../images/arrow_facing_right_red.gif"); }
+    body.Venue #content img { margin:20px 0; }
+    body.Venue #content ul li { background-image: url("../images/bullet_point_red.gif"); }
+    body.Venue #content .separator { background-image: url("../images/underscore_device_red.gif"); }
+    
+    
+    body.Gallery h1 { background: url("../images/under_the_hood_logo_pink.jpg") top center no-repeat transparent; }
+    body.Gallery #content a { color: #b4297c; }
+    body.Gallery #main-nav li a {color: #fff;}
+    body.Gallery #main-nav li a:hover { color: #b4297c; }
+    body.Gallery h2 { background: url("../images/underscore_device_pink.gif") bottom right no-repeat transparent; }
+    body.Gallery h3 { background: url("../images/underscore_device_pink.gif") top right no-repeat transparent; }
+    body.Gallery .bulletlist li {background: url("../images/bullet_point_pink.gif") left center no-repeat transparent; }
+    body.Gallery #content .download {background-image: url("../images/download_icon_pink.gif"); }
+    body.Gallery #main-nav li .current { color:#b4297c; background-image: url("../images/arrow_facing_right_pink.gif"); }
+    body.Gallery #content img { margin:1px; }
+    body.Gallery #content ul li { background-image: url("../images/bullet_point_pink.gif"); }
+    body.Gallery #content .separator { background-image: url("../images/underscore_device_pink.gif"); }
+    
+    
+    body.Contact h1 { background: url("../images/under_the_hood_logo_orange.jpg") top center no-repeat transparent; }
+    body.Contact #content a { color: #9f410d; }
+    body.Contact #main-nav li a {color: #fff;}
+    body.Contact #main-nav li a:hover { color: #9f410d; }
+    body.Contact h2 { background: url("../images/underscore_device_orange.gif") bottom right no-repeat transparent; }
+    body.Contact h3 { background: url("../images/underscore_device_orange.gif") top right no-repeat transparent; }
+    body.Contact .bulletlist li {background: url("../images/bullet_point_orange.gif") left center no-repeat transparent; }
+    body.Contact #content .download {background-image: url("../images/download_icon_orange.gif"); }
+    body.Contact #main-nav li .current { color:#9f410d; background-image: url("../images/arrow_facing_right_orange.gif"); }
+    body.Contact #content img { margin:1px; }
+    body.Contact #content ul li { background-image: url("../images/bullet_point_orange.gif"); }
+    body.Contact #content .separator { background-image: url("../images/underscore_device_orange.gif"); }
+    
+    
+    
     
     
     /* Skinnable / Addons not crucial to the framework */
