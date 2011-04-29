@@ -11,7 +11,7 @@ $app_title = "Under the Hood";
 // Any outstanding pages will be appended in alphabetical order.
 // Any listed pages that dont exist, will be ignored.
 
-$prefered_order_of_pages = array("Home.html","The_Event.html","The_Brief.html","Gallery.html");
+$prefered_order_of_pages = array("Home.html","The_Event.html","The_Brief.html");
 
 // if you would like underthehood to auto generate a gallery page from a flickr account hten set the bellow value to true
 // and supply the relevant usid  below that.

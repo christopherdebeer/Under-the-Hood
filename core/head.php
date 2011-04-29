@@ -7,5 +7,4 @@
 <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="core/js/jqtouch/jqtouch.min.js"></script>
 <script type="text/javascript" src="core/js/underthehood.js"></script>
