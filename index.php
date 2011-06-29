@@ -127,7 +127,7 @@ if ($autogenerate_gallery) {include("core/gallery.php");}
 	    $html .= "<h1><a href='$firstpage'>$app_title</a></h1><div id='content'>" . $content . "</div>"."\n";
 	    $html .= $home_list;
 	    $html .= "<div id='footer'>" . $footer . "</div>";
-	    $html .= "</div>\n</body>"."\n";
+	    $html .= "</div>\n</body></html>"."\n";
 	    
 	    $homefile =fopen("$item.html", 'w');
 	    fwrite($homefile, $html);
